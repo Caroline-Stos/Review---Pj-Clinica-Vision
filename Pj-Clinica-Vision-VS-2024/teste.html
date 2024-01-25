@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--folhas de estilo-->
+    <link rel="stylesheet" href="css/css-especialidades/especialidades.css">
+    <link rel="stylesheet" href="css/css-especialidades/cards_eq_medica.css">
+    <link rel="stylesheet" href="css/css-especialidades/header.css">
+    <link rel="stylesheet" href="css/css-especialidades/reset.css">
+    <link rel="stylesheet" href="css/css-especialidades/rodape.css">
+    <link rel="stylesheet" href="css/css-especialidades/base.css">
+    <link rel="stylesheet" href="css/css-especialidades/titulo.css">
+    
+    <title>Clinica Vision</title>
+
+</head>
+
+<body>
+
+<!--Seção do cabeçalho - Feito por Caroline -->
+
+<header> <!-- Aqui é o cabeçalho -->
+
+    <div class="faixa"> <!--Esta faixa fica em cima do menu na parte superior-->
+        <p>(11) 3275-3530</p>
+        <a href="#" target="_blank">Agende sua consulta</a> <!-- Este link está em formato de botão -->
+    </div>
+
+    <div class="cabecalho__container"> <!-- Este cabeçalho é aquela parte com bg branco e o menu com os links -->
+        <img class="logo__cabecalho" src="img/img-especialidades/logo-escuro.svg" alt="Logotipo da Clínica Vision.">
+        <nav id="mostrarMenu" class="cabecalho__menu">
+            <ul class="cabecalho__menu__lista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre">A Clínica</a></li> <!-- A clínica direciona para a parte de "Sobre nós" na mesma página -->
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#">Exames</a></li>
+                <li><a href="#">Convênios</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <a class="cabecalho__link__login" href="login.html">LOGIN</a>
+        <!-- link do login também vai ficar em formato de botão -->
+        <div onclick="mostrarMenu()" class="mobile-menu-amburguer">
+            <!-- Este menu amburguer só aparece no responsivo. A função está no path:assets/js/sideBar.js -->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+</header>
+
+<main>
+
+<!--Seção três cards - perfis médicos -->
+
+<section class="equipe_medica"> <!--container contendo os 3 cards do medicos para aplicar o background-->
+
+    <!--Titulo "Equipe Medica"-->
+
+    <div class="titulo_container"> <!--container que contem o titulo-->
+
+        <!-- <img class="bg_painel" src="img/bg_painel.svg" alt="imagem banner"> -->
+        <div class="fundo_titulo">
+            
+            <div class="titulo_pg">Equipe Médica</div> <!--Titulo equipe médica-->
+        
+        </div>
+        
+    </div>
+
+    <div class="alinhamento_horizontal" id="efeito_hover"> <!--div para linhar os 3 cards horizontalmente e colocar efeito de zoom-->
+
+        <section class="card_dra_andreia"> <!--classe para dar forma aos cards-->
+
+            <h3>Dra. Andreia</h3>
+
+                <section class="retangulo"> <!--retangulo interno do card contendo os dados e foto-->
+
+                    <p><img class="perfil" src="img/img-especialidades/img_perfil_med_mulher.png" alt="perfil medico"></p>
+
+                    <p class="oftalmologista">Oftalmologista</p>
+                    <p>CRM 112022</p>
+                    <p>RQE Nº 59782</p>
+
+                    <p class="especialidades">Especialidades</p>
+                    <p>Oftalmo-Pediatra</p>
+                    <p>Neuro Ocular </p>
+
+                </section>
+
+            <p><button class="botao_saiba_mais"><a href="#" id="link">Saiba Mais</a></button></p> <!--botão saiba mais-->
+
+        </section>
+
+        <section class="card_dr_fabricio"> <!--classe para dar forma aos cards-->
+
+            <h3>Dr. Fabrício</h3>
+        
+                <section class="retangulo"> <!--retangulo interno do card contendo os dados e foto-->
+
+                    <p><img class="perfil" src="img/img-especialidades/img_perfil_med_homem.png" alt="perfil medico"></p>
+            
+                    <p class="oftalmologista">Oftalmologista</p>
+                    <p>CRM 146288</p>
+                    <p>Nº 64825</p>
+                    <p class="especialidades">Especialidades</p>
+                    <p>Cirurgia do Segmento anterior</p>
+
+                </section>
+
+                <p><button class="botao_saiba_mais"><a href="#" id="link">Saiba Mais</a></button></p> <!--botão saiba mais-->
+
+        </section>
+
+        <section class="card_dra_ana"> <!--classe para dar forma aos cards-->
+
+            <h3>Dra. Ana Cláudia</h3>
+
+                <section class="retangulo"> <!--retangulo interno do card contendo os dados e foto-->
+    
+                    <p><img class="perfil" src="img/img-especialidades/img_perfil_med_mulher.png" alt="perfil medico"></p>
+
+                    <p class="oftalmologista">Oftalmologista</p>
+                    <p>CRM 152257</p>
+                    <p>Nº 69358</p>
+                    <p class="especialidades">Especialidades</p>
+                    <p>Retina</p>
+                    <p>Neuro-oftalmologia</p>
+
+                </section>
+
+                <p><button class="botao_saiba_mais"><a href="#" id="link">Saiba Mais</a></button></p> <!--botão saiba mais-->
+
+        </section>
+
+    </div>
+
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<!--Seção detalhada - Dra Andreia -->
+
+<div id="espacamento_pagina">
+
+<section class="esp_detalhada">
+
+<div style='position:relative; top:0px; left:0px;'>
+
+        <div style='position: absolute; top:0px; right:0px;'>
+            <img class="bg_listras_azuis" src="img/img-especialidades/bg_esp_1.svg">
+        </div>
+
+    <div class="alinhamento_crm">
+        
+            <div>
+
+                <img class="perfil" src="img/img-especialidades/img_perfil_med_mulher.png" alt="perfil medico">
+
+            </div>
+            
+            <div class="box_crm">
+
+                <h3>Dra. Andreia</h3>
+
+                    <p><scan>Oftalmologista</scan> CRM 112022   RQE Nº 59782</p>
+
+                    <p><scan>Especialidades</scan> Oftalmo-Pediatra / Neuro Ocular</p>
+
+                    <p><button class="btn_duvidas"><a href="#" id="entre_em_contato">Dúvidas</a></button></p>
+
+            </div>
+
+    </div>
+
+    <div class="box_tratamento_especialidades">
+
+        <h4>Tratamentos</h4>
+
+        <ul>
+           <li>Desenvolvimento visual das crianças</li>
+           <li>Tampão</li>
+           <li>Diagnóstico de miopia</li> 
+           <li>Estrasbismo</li> 
+           <li>Astigmatismo </li>
+           <li>Glaucoma</li>
+        </ul>
+
+        <h4>Especialidades</h4>
+
+        <p>Graduação em Medicina pela Faculdade de Medicina do ABC. Residência Médica em oftalmologia pelo Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo (HC FMUSP).</p>
+        <p>Título de Especialista pelo CBO. Especialização em Estrabismo pelo pelo Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo. </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<!--Seção detalhada Dr. Fabricio-->
+
+<section class="esp_detalhada">
+
+<div style='position:relative; top:0px; left:0px;'>
+
+    <div style='position:absolute; top:0px; left:0px;'>
+        <img class="bg_listras_azuis" src="img/img-especialidades/bg_esp_2.svg">
+    </div>
+
+        <div class="alinhamento_crm_fabricio">
+
+            <div>
+
+                <img class="perfil" src="img/img-especialidades/img_perfil_med_homem.png" alt="perfil medico">
+
+            </div>
+
+            <div class="box_crm_fabricio">
+
+                <h3>Dr. Fabrício</h3>
+
+                <p><scan>Oftalmologista</scan> CRM 146288 RQE Nº 64825 </p>
+
+                <p><scan>Especialidades</scan> Cirurgia do Segmento Anterior </p> 
+
+                <p><button class="btn_duvidas_fabricio"><a href="#" id="entre_em_contato">Dúvidas</a></button></p>
+
+            </div>
+        
+        </div>
+
+            <div class="box_tratamento_especialidades_fabricio">
+
+                <h4>Tratamentos</h4>
+
+                <ul>
+                    <li>Desenvolvimento visual das crianças</li>
+                    <li>Tampão</li>
+                    <li>Diagnóstico de miopia</li> 
+                    <li>Estrasbismo</li> 
+                    <li>Astigmatismo </li>
+                    <li>Glaucoma</li>
+                 </ul>
+
+                <h4>Especialidades</h4>
+
+                <p>Fellowship, Cleveland Clinic Foundation, 2006 </p>
+                <p>Universidade de São Paulo, 2000</p>
+                <p>Doutorado, Faculdade de Medicina da USP, 2011. </p>
+        
+            </div>
+
+</div>
+
+</section>
+
+<!--Seção detalhada Dra. Ana Claudia-->
+
+<section class="esp_detalhada">
+
+<div style='position:relative; top:0px; left:0px;'>
+
+        <div style='position:absolute; top:0px; right:0px;'>
+            <img class="bg_listras_azuis" src="img/img-especialidades/bg_esp_1.svg">
+        </div>
+
+            <div class="alinhamento_crm">
+
+                <div>
+                    
+                    <img class="perfil" src="img/img-especialidades/img_perfil_med_mulher.png" alt="perfil medico">
+            
+                </div>
+
+                <div class="box_crm">
+
+                    <h3>Dra. Ana Cláudia</h3>
+
+                    <p><scan>Oftalmologista</scan> CRM 152257 RQE Nº 69358 </p>
+                    <p><scan>Especialidades</scan> Retina / Neuro-oftalmologia </p>
+
+                    <p></p><button class="btn_duvidas"><a href="#" id="entre_em_contato">Dúvidas</a></button></p>
+                
+                </div>
+            
+            </div>
+
+                <div class="box_tratamento_especialidades">
+
+                    <h4>Tratamentos</h4>
+
+                    <ul>
+                        <li>Oclusão da veia Retiniana</li>
+                        <li>Papiledema</li>
+                        <li>Descolamento de Retina</li>
+                        <li>Decolamento do Vitreo</li>
+                        <li>Neurite</li>
+                        <li>Miopia</li>
+                    </ul>
+
+                    <h4>Especialidades</h4>
+
+                    <p>Graduação em Medicina - Universidade de São Paulo. Residência Médica em Oftalmologia - Universidade de São Paulo.</p>
+                    <p>Título de especialista em Oftalmologia - Conselho Brasileiro de OftalmologiaEspecialização em Retina Cirúrgica e Neuroftalmologia, USPDoutora pela USP.    </p>
+
+                </div>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+<!--Footer-->
+
+<footer class="rodape__container">
+
+    <div class="rodape">
+
+        <div id="horario">
+
+            <img class="logo__rodape" src="img/img-especialidades/logo-claro.svg" alt="logotipo">
+
+            <p class="texto texto__rodape">
+                Horário de Atendimento
+                <br>
+                Seg a Sex das 8h às 18h
+                <br>
+                Sáb das 8h às 12h
+            </p>
+        </div>
+
+        <div id="contato">
+            <ul>
+                <li>
+                    <img src="img/img-especialidades/telefone.png" alt="Ícone de telefone">
+                    <span class="texto texto__rodape">(11) 3276-3530</span>
+                </li>
+                <li>
+                    <img src="img/img-especialidades/whatsapp.png" alt="Ícone do Whatsapp"><span
+                        class="texto texto__rodape">(11) 96731-8829</span>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/iw4931p3dmeGrhv8A" target="_blank">
+                        <img src="img/img-especialidades/localizacao.png" alt="Ícone de localização"><span
+                            class="texto texto__rodape">R. Padre Adelino, 333 - Belenzinho
+                            <br>
+                            São Paulo - SP, CEP: 03303-000</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="redes-sociais">
+
+            <h1 class="titulo" id="titulo__redes">Siga-nos!</h1>
+
+            <div id="redes__links">
+
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/img-especialidades/instagram.png" alt="Ícone do Instagram"></a>
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/img-especialidades/facebook.png" alt="Ícone do Facebook"></a>
+            </div>
+
+        </div>
+
+        <div id="info-dev">
+
+            <p class="texto texto__rodape" id="info-dev__texto">Desenvolvido por</p>
+            <a href="#" target="_blank"><img id="logo-time" src="img/img-especialidades/dev-team.svg"
+                alt="Logotipo do grupo de desenvolveres DEV TEAM"></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/sidebar.js"></script>
+
+</body>
+</html>
