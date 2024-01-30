@@ -19,7 +19,7 @@ header > div:first-child > a > button {
     width: 200px;
     height: 30px;
     background-color: var(--white);
-    
+
     border-radius: 5px;
     font-weight: 600;
     font-size: 16px;
@@ -66,4 +66,102 @@ header > div:last-child > nav > a > button {
     color: var(--white);
     border-radius: 5px;
 }
+
+main {
+    width: 100%;
+    height: 4247px;
+}
+
+main > section:first-child {
+    width: 100%;
+    height: 952px;
+
+    background-color: var(--cyan-3);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > section:first-child > div:first-child {
+    width: 414px;
+    height: 90px;
+    background-color: var(--cyan-4);
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+main > section:first-child > section {
+    display: flex;
+
+}
+
+main > section:first-child > section > div {
+    width: 357px;
+    height: 667px;
+    
+    background-color: var(--blue-2);
+    border-radius: 35px;
+}
+
+main > section:first-child > section > div > h3 {
+    background-color: var(--cyan-4);
+    border-radius: 35px 35px 0px 0px;
+    height: 85px;
+
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.img_profile {
+    width: 181px;
+    height: 232px;
+    border-radius: 35px;
+}
+
+/* verificar altura */
+main > section:first-child > section > div > div {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+main > section:first-child > section > div > a {
+    background-color: var(--cyan-4);
+    border-radius: 35px 35px 0px 0px;
+    height: 85px;
+}
+
+main > section:first-child > section > div > a > button {
+    width: 190px;
+    height: 52px;
+    border-radius: 35px;
+    border: none;
+    background-color: var(--green);
+    
+    font-size: 24px;
+    font-weight: 500;
+    font-weight: 600;
+    color: var(--white);
+}
+
+
+
+
 
