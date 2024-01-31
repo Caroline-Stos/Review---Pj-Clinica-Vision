@@ -1,77 +1,9 @@
-header > div:first-child {
-    width: 100%;
-    height: 50px;
-    background-color: var(--blue-9);
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-header > div:first-child > span {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--white);
-    margin-right: 100px;
-}
-
-header > div:first-child > a > button {
-    width: 200px;
-    height: 30px;
-    background-color: var(--white);
-
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--blue-9);
-    margin-right: 100px;
-}
-
-header > div:last-child {
-    background-color: var(--white);
-    width: 100%;
-    height: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-header > div:last-child > img {
-    height: 85px;
-    margin: 0 3%;
-    max-width: 235px;
-    min-width: 150px;
-}
-
-header > div:last-child > nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
-    white-space: nowrap;   
-}
-
-header > div:last-child > nav > a {
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--blue-9);
-}
-
-header > div:last-child > nav > a > button {
-    background-color: var(--blue-9);
-    width: 150px;
-    height: 40px;
-    font-size: 20px;
-    color: var(--white);
-    border-radius: 5px;
-}
-
+/* main - cards */
 main {
     width: 100%;
     height: 4247px;
 }
-
+/* background da section dos cards */
 main > section:first-child {
     width: 100%;
     height: 952px;
@@ -81,8 +13,10 @@ main > section:first-child {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
+/* titulo */
 main > section:first-child > div:first-child {
     width: 414px;
     height: 90px;
@@ -98,11 +32,14 @@ main > section:first-child > div:first-child {
     font-weight: 600;
 }
 
+/* background do card */
 main > section:first-child > section {
+    width: 100%;
+
     display: flex;
-
+    justify-content: space-evenly;
 }
-
+/* cards */
 main > section:first-child > section > div {
     width: 357px;
     height: 667px;
@@ -111,10 +48,10 @@ main > section:first-child > section > div {
     border-radius: 35px;
 }
 
-main > section:first-child > section > div > h3 {
+main > section:first-child > section > div > div:first-child {
     background-color: var(--cyan-4);
     border-radius: 35px 35px 0px 0px;
-    height: 85px;
+    height: 14%;
 
     font-size: 32px;
     font-weight: 500;
@@ -131,26 +68,38 @@ main > section:first-child > section > div > h3 {
     border-radius: 35px;
 }
 
-/* verificar altura */
-main > section:first-child > section > div > div {
-    width: 100%;
-    height: 70%;
+/* info-cards */
+#info_cards {
+    height: 72%;
 
     display: flex;
     align-items: center;
     justify-content:center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
-main > section:first-child > section > div > a {
-    background-color: var(--cyan-4);
-    border-radius: 35px 35px 0px 0px;
-    height: 85px;
+#info_cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main > section:first-child > section > div > a > button {
+/* seção do botao */
+main > section:first-child > section > div > div:last-child {
+    background-color: var(--cyan-4);
+    border-radius: 0px 0px 35px 35px;
+    height: 14%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* botao - saiba mais */
+.btn_saiba_mais a button {
     width: 190px;
-    height: 52px;
+    height: 42px;
     border-radius: 35px;
     border: none;
     background-color: var(--green);
@@ -160,8 +109,3 @@ main > section:first-child > section > div > a > button {
     font-weight: 600;
     color: var(--white);
 }
-
-
-
-
-
