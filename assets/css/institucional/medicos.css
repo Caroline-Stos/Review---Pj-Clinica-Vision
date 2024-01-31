@@ -1,3 +1,4 @@
+/* header */
 header > div:first-child {
     width: 100%;
     height: 50px;
@@ -67,11 +68,12 @@ header > div:last-child > nav > a > button {
     border-radius: 5px;
 }
 
+/* main - cards */
 main {
     width: 100%;
     height: 4247px;
 }
-
+/* background da section dos cards */
 main > section:first-child {
     width: 100%;
     height: 952px;
@@ -81,8 +83,10 @@ main > section:first-child {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
+/* titulo */
 main > section:first-child > div:first-child {
     width: 414px;
     height: 90px;
@@ -98,11 +102,14 @@ main > section:first-child > div:first-child {
     font-weight: 600;
 }
 
+/* background do card */
 main > section:first-child > section {
+    width: 100%;
+
     display: flex;
-
+    justify-content: space-evenly;
 }
-
+/* cards */
 main > section:first-child > section > div {
     width: 357px;
     height: 667px;
@@ -111,10 +118,10 @@ main > section:first-child > section > div {
     border-radius: 35px;
 }
 
-main > section:first-child > section > div > h3 {
+main > section:first-child > section > div > div:first-child {
     background-color: var(--cyan-4);
     border-radius: 35px 35px 0px 0px;
-    height: 85px;
+    height: 14%;
 
     font-size: 32px;
     font-weight: 500;
@@ -131,26 +138,38 @@ main > section:first-child > section > div > h3 {
     border-radius: 35px;
 }
 
-/* verificar altura */
-main > section:first-child > section > div > div {
-    width: 100%;
-    height: 70%;
+/* info-cards */
+#info_cards {
+    height: 72%;
 
     display: flex;
     align-items: center;
     justify-content:center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
-main > section:first-child > section > div > a {
-    background-color: var(--cyan-4);
-    border-radius: 35px 35px 0px 0px;
-    height: 85px;
+#info_cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main > section:first-child > section > div > a > button {
+/* seção do botao */
+main > section:first-child > section > div > div:last-child {
+    background-color: var(--cyan-4);
+    border-radius: 0px 0px 35px 35px;
+    height: 14%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* botao - saiba mais */
+.btn_saiba_mais a button {
     width: 190px;
-    height: 52px;
+    height: 42px;
     border-radius: 35px;
     border: none;
     background-color: var(--green);
@@ -160,6 +179,10 @@ main > section:first-child > section > div > a > button {
     font-weight: 600;
     color: var(--white);
 }
+
+
+
+
 
 
 
