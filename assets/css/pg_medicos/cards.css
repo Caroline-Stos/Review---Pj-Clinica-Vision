@@ -1,0 +1,129 @@
+body{
+    background-color:var(--branco);
+    margin:0%;
+    margin-top: 0%;
+}
+/* background dos cards - resumo dos 3 perfis */
+.equipe_medica{
+    max-width: 100%;
+    height:850px;
+    padding: 80px;
+    margin-bottom: 50px;
+    background-color: var(--azul-claro-light);
+    position: relative;
+}
+/* tamanho das fotos de perfil */
+.perfil{
+    width: 181px;
+    height: 232px;
+    border-radius: 35px;
+    padding: none;
+}
+/* retangulos interno dos 3 cards centralizados */
+.retangulo{
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.retangulo{
+    /* border: 1px solid var(--preto); */
+    width: 357px;
+    height: 430px;
+    background-color: var(--azul-claro);
+}
+
+/* card 1 - dra andreia */ 
+.card_dra_andreia{
+    display: grid;
+    width: 357px;
+    height: 600px;
+    /* border: 1px solid var(--preto); */
+    border-radius: 35px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--azul-escuro-light);
+}
+
+/* estilo do texto */
+.card_dra_andreia>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    color: var(--branco);
+}
+
+/* aplicando negrito nos subtitulos */
+.oftalmologista{
+    font-weight: bold;
+}
+.especialidades{
+    font-weight: bold;
+}
+
+/* estilo do botão - saiba mais */
+.botao_saiba_mais{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color:var(--branco);
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+    background-color: var(--verde);
+    font-weight: 700;
+    border:none;
+    text-decoration: none;
+}
+/* retirando o sublinhado do link do botao*/
+#link{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+/* card 2 dr fabricio */
+.card_dr_fabricio{
+        display: grid;
+        width: 357px;
+        height: 600px;
+        /* border: 1px solid var(--preto); */
+        border-radius: 35px;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--azul-escuro-light);
+}
+
+/* estilo do texto */
+.card_dr_fabricio>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    color: var(--branco);
+}
+
+/* card 3 dr ana claudia */
+.card_dra_ana{
+    display:grid;
+    width: 357px;
+    height: 600px;
+    /* border: 1px solid var(--preto); */
+    border-radius: 35px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--azul-escuro-light);
+}
+/* estilo do texto */
+.card_dra_ana>h3{
+font-family: 'Raleway', sans-serif;
+font-size: 30px;
+padding-top: 20px;
+color: var(--branco);
+}
+/* alinhamento horizontal das caixas */
+.alinhamento_horizontal{
+    display: flex;
+    justify-content: space-between;
+}
+#efeito_hover>:not(:hover){
+    transform: scale(1.1);
+    transition: 1s;
+}

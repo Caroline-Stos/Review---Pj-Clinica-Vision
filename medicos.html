@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="medical_team" href="#">
+    <!--folhas de estilo - background-->
+    <link rel="stylesheet" href="assets/css/background/base.css">
+    <link rel="stylesheet" href="assets/css/background/footer.css">
+    <link rel="stylesheet" href="/assets/css/background/header.css">
+    <link rel="stylesheet" href="assets/css/background/reset.css">
+    <!--folhas de estilo - main-->
+    <link rel="stylesheet" href="assets/css/pg_medicos/title.css">
+    <link rel="stylesheet" href="assets/css/pg_medicos/cards.css">
+    <link rel="stylesheet" href="assets/css/pg_medicos/main.css">
+    <link rel="stylesheet" href="assets/css/pg_medicos/esp.css">
+
     <title>Clinica Vision - Equipe Médica</title>
 </head>
 
@@ -17,17 +27,21 @@
         </div>
 
         <div>
-            <img class="header_logo" src="assets/img/logo-escuro.svg" alt="Logotipo da Clínica Vision">
-            <nav id="show_menu">
-                <a href="#">Home</a>
-                <a href="#">A Clínica</a>
-                <a href="#">Especialidades</a>
-                <a href="#">Exames</a>
-                <a href="#">Convênios</a>
-                <a href="#">Contato</a>
+            <img class="header_logo" src="assets/img/logo/logo-escuro.svg" alt="Logotipo da Clínica Vision">
+            <nav class="nav_menu" id="show_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">A Clínica</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Exames</a></li>
+                    <li><a href="#">Convênios</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </nav>
+            <a href="#">LOGIN</a>
 
-            <div onclick="show_Menu()" class="mobile-menu-amburguer">
+            <!--verificar função-->
+            <div onclick="show_Menu()" class="mobile-menu-hamburguer">
                 <!-- Este menu amburguer só aparece no responsivo. A função está no path:assets/js/sideBar.js -->
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -119,6 +133,7 @@
 
     </main>
 
+    <script src="assets/js/side_bar.js"></script>
 
 </body>
 
