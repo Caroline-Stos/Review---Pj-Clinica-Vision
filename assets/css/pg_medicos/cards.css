@@ -1,10 +1,5 @@
-body{
-    background-color:var(--branco);
-    margin:0%;
-    margin-top: 0%;
-}
 /* background dos cards - resumo dos 3 perfis */
-.equipe_medica{
+.first_section{
     max-width: 100%;
     height:850px;
     padding: 80px;
@@ -12,42 +7,72 @@ body{
     background-color: var(--azul-claro-light);
     position: relative;
 }
+/* container que possui o banner de bg, está sendo utilizado para alinhar o elemento titulo que esta dentro dele */
+.first_section>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+/* faixa branca atras do titulo */
+.first_section>div>div{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 100px;
+    background-color: var(--azul-medio);
+    border-radius: 30px;
+}
+/* Fonte e margem do titulo "equipe medica" */
+.title{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: var(--branco);
+    position: absolute;
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
+}
 /* tamanho das fotos de perfil */
-.perfil{
+.img_perfil{
     width: 181px;
     height: 232px;
     border-radius: 35px;
     padding: none;
 }
-/* retangulos interno dos 3 cards centralizados */
-.retangulo{
+.hover_cards>:not(:hover){
+    transform: scale(1.1);
+    transition: 1s;
+}
+/* cards */
+.card_medico{
+    width: 357px;
+    height: 600px;
+    border-radius: 35px;
+    text-align: center;
+    background-color: var(--azul-escuro-light);
+
     display: grid;
-    justify-content: center;
+    justify-items: center;
+}
+/* retangulos interno dos 3 cards centralizados */
+.card_medico div{
+    width: 357px;
+    height: 98%;
+    background-color: var(--azul-claro);
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
     padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
-.retangulo{
-    /* border: 1px solid var(--preto); */
-    width: 357px;
-    height: 430px;
-    background-color: var(--azul-claro);
-}
-
-/* card 1 - dra andreia */ 
-.card_dra_andreia{
-    display: grid;
-    width: 357px;
-    height: 600px;
-    /* border: 1px solid var(--preto); */
-    border-radius: 35px;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--azul-escuro-light);
-}
-
 /* estilo do texto */
-.card_dra_andreia>h3{
+.card_medico>h3{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     padding-top: 20px;
@@ -55,15 +80,12 @@ body{
 }
 
 /* aplicando negrito nos subtitulos */
-.oftalmologista{
-    font-weight: bold;
-}
-.especialidades{
+strong{
     font-weight: bold;
 }
 
 /* estilo do botão - saiba mais */
-.botao_saiba_mais{
+.card_medico button{
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     color:var(--branco);
@@ -72,58 +94,13 @@ body{
     background-color: var(--verde);
     font-weight: 700;
     border:none;
-    text-decoration: none;
 }
 /* retirando o sublinhado do link do botao*/
-#link{
+.card_medico a{
     text-decoration: none;
     color: var(--branco);
 }
-
-/* card 2 dr fabricio */
-.card_dr_fabricio{
-        display: grid;
-        width: 357px;
-        height: 600px;
-        /* border: 1px solid var(--preto); */
-        border-radius: 35px;
-        justify-content: center;
-        text-align: center;
-        background-color: var(--azul-escuro-light);
-}
-
-/* estilo do texto */
-.card_dr_fabricio>h3{
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    padding-top: 20px;
-    color: var(--branco);
-}
-
-/* card 3 dr ana claudia */
-.card_dra_ana{
-    display:grid;
-    width: 357px;
-    height: 600px;
-    /* border: 1px solid var(--preto); */
-    border-radius: 35px;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--azul-escuro-light);
-}
-/* estilo do texto */
-.card_dra_ana>h3{
-font-family: 'Raleway', sans-serif;
-font-size: 30px;
-padding-top: 20px;
-color: var(--branco);
-}
-/* alinhamento horizontal das caixas */
-.alinhamento_horizontal{
+#align_cards{
     display: flex;
     justify-content: space-between;
-}
-#efeito_hover>:not(:hover){
-    transform: scale(1.1);
-    transition: 1s;
 }
