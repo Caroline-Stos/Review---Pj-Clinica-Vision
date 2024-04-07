@@ -1,0 +1,106 @@
+/* background dos cards - resumo dos 3 perfis */
+.first_section{
+    max-width: 100%;
+    height:850px;
+    padding: 80px;
+    margin-bottom: 50px;
+    background-color: var(--azul-claro-light);
+    position: relative;
+}
+/* container que possui o banner de bg, está sendo utilizado para alinhar o elemento titulo que esta dentro dele */
+.first_section>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+/* faixa branca atras do titulo */
+.first_section>div>div{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 100px;
+    background-color: var(--azul-medio);
+    border-radius: 30px;
+}
+/* Fonte e margem do titulo "equipe medica" */
+.title{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: var(--branco);
+    position: absolute;
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
+}
+/* tamanho das fotos de perfil */
+.img_perfil{
+    width: 181px;
+    height: 232px;
+    border-radius: 35px;
+    padding: none;
+}
+.hover_cards>:not(:hover){
+    transform: scale(1.1);
+    transition: 1s;
+}
+/* cards */
+.card_medico{
+    width: 357px;
+    height: 600px;
+    border-radius: 35px;
+    text-align: center;
+    background-color: var(--azul-escuro-light);
+
+    display: grid;
+    justify-items: center;
+}
+/* retangulos interno dos 3 cards centralizados */
+.card_medico div{
+    width: 357px;
+    height: 98%;
+    background-color: var(--azul-claro);
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+/* estilo do texto */
+.card_medico>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    color: var(--branco);
+}
+
+/* aplicando negrito nos subtitulos */
+strong{
+    font-weight: bold;
+}
+
+/* estilo do botão - saiba mais */
+.card_medico button{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color:var(--branco);
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+    background-color: var(--verde);
+    font-weight: 700;
+    border:none;
+}
+/* retirando o sublinhado do link do botao*/
+.card_medico a{
+    text-decoration: none;
+    color: var(--branco);
+}
+#align_cards{
+    display: flex;
+    justify-content: space-between;
+}

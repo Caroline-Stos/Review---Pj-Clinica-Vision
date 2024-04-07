@@ -1,313 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="medical_team" href="#">
-
-    <!--folhas de estilo-->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/medicos/header.css">
-    <link rel="stylesheet" href="assets/css/medicos/cards.css">
-    <link rel="stylesheet" href="assets/css/medicos/esp_details.css">
+    <!--folhas de estilo - background-->
+    <link rel="stylesheet" href="assets/css/background/base.css">
+    <link rel="stylesheet" href="assets/css/background/footer.css">
+    <link rel="stylesheet" href="/assets/css/background/header.css">
+    <link rel="stylesheet" href="assets/css/background/reset.css">
+    <!--folhas de estilo - main-->
+    <link rel="stylesheet" href="assets/css/pg_medicos/title.css">
+    <link rel="stylesheet" href="assets/css/pg_medicos/cards.css">
+    <link rel="stylesheet" href="assets/css/pg_medicos/main.css">
+    <link rel="stylesheet" href="assets/css/pg_medicos/esp.css">
 
     <title>Clinica Vision - Equipe Médica</title>
 </head>
 
 <body>
-
     <header>
-        <div class="font-1">
-            <span>(11) 3276-3630</span>
-            <a href="#">Agende sua consulta</a>
-        </div>
         <div>
-            <img src="assets/img/logo/logo-vision-dark.svg" alt="Logotipo da Clínica Vision">
-            <nav class="font-2">
-                <a href="#">HOME</a>
-                <a href="#">A CLÍNICA</a>
-                <a href="#specialties">ESPECIALIDADES</a>
-                <a href="#">EXAMES</a>
-                <a href="#">CONVÊNIOS</a>
-                <a href="#">CONTATO</a>
-                <a href="#" class="login">LOGIN</a>
+            <span>(11) 3275-3530</span>
+            <a href="#" target="_blank">Agende sua consulta</a>
+        </div>
+
+        <div>
+            <img class="header_logo" src="assets/img/logo/logo-escuro.svg" alt="Logotipo da Clínica Vision">
+            <nav class="nav_menu" id="show_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">A Clínica</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Exames</a></li>
+                    <li><a href="#">Convênios</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </nav>
+            <a href="#">LOGIN</a>
+
+            <!--verificar função-->
+            <div onclick="show_Menu()" class="mobile-menu-hamburguer">
+                <!-- Este menu amburguer só aparece no responsivo. A função está no path:assets/js/sideBar.js -->
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section> <!--cards -->
+        <section class="first_section"> <!--Cards - section-->
 
-            <div class="font-1">
-                <h1>EQUIPE MÉDICA</h1>
+            <div>
+                <div>
+                    <h1 class="title">Equipe Médica</h1>
+                </div>
             </div>
+            
+            <div class="hover_cards" id="align_cards">
+                <section class="card_medico">
 
-            <section>
-                <div>
+                    <h3>Dra. Andreia</h3>
+
                     <div>
-                        <h3 class="font-2">Dra. Andreia</h3>
+                        <img class="img_perfil" src="assets/img/perfil_medico/img_perfil_med_mulher.png" alt="perfil_medico">
+
+                        <strong>Oftalmologia</strong>
+                        <p>CRM 1120220</p>
+                        <p>RQE Nº 59782</p>
+
+                        <strong>Especialidades</strong>
+                        <p>Oftalmo-Pediatria</p>
+                        <p>Neuro Ocular</p>
                     </div>
 
-                    <div class="font-1" id="info_cards">
-                        <img class="img_profile" src="assets/img/perfil_medico/img_perfil_med_mulher.png"
-                            alt="perfil medico">
-                        <div>
-                            <h1>Oftalmologia</h1>
-                            <p>CRM 1120220</p>
-                            <p>RQE Nº 59782</p>
-                        </div>
-                        <div>
-                            <h1>Especialidades</h1>
-                            <p>Oftalmo-Pediatria</p>
-                            <p>Neuro Ocular</p>
-                        </div>
-                    </div>
+                    <a href="#"><button>Saiba mais</button></a>
 
-                    <div class="font-2" id="btn_saiba_mais">
-                        <a href="#">Saiba mais</a>
-                    </div>
-                </div>
+                </section>
 
-                <div>
+                <section class="card_medico">
+
+                    <h3>Dr. Fabricio</h3>
+
                     <div>
-                        <h3 class="font-2">Dr. Fabricio</h3>
+                        <img class="img_perfil" src="assets/img/perfil_medico/img_perfil_med_homem.png" alt="perfil_medico">
+
+                        <strong>Oftalmologia</strong>
+                        <p>CRM 146288</p>
+                        <p>RQE Nº 64825</p>
+
+                        <strong>Especialidades</strong>
+                        <p>Cirurgia do Segmento anterior</p>
                     </div>
 
-                    <div class="font-1" id="info_cards">
-                        <img class="img_profile" src="assets/img/perfil_medico/img_perfil_med_homem.png"
-                            alt="perfil medico">
-                        <div>
-                            <h1>Oftalmologia</h1>
-                            <p>CRM 146288</p>
-                            <p>RQE Nº 64825</p>
-                        </div>
+                    <a href="#"><button>Saiba mais</button></a>
 
-                        <div>
-                            <h1>Especialidades</h1>
-                            <p>Cirurgia do Segmento anterior</p>
-                        </div>
-                    </div>
+                </section>
 
-                    <div class="font-2" id="btn_saiba_mais">
-                        <a href="#">Saiba mais</a>
-                    </div>
-                </div>
+                <section class="card_medico">
 
-                <div>
+                    <h3>Dra. Ana Cláudia</h3>
+
                     <div>
-                        <h3 class="font-2">Dra. Ana Cláudia</h3>
+                        <img class="img_perfil" src="assets/img/perfil_medico/img_perfil_med_mulher.png" alt="perfil_medico">
+
+                        <strong>Oftalmologia</strong>
+                        <p>CRM 152257</p>
+                        <p>RQE Nº 69358</p>
+
+                        <strong>Especialidades</strong>
+                        <p>Retina</p>
+                        <p>Neuro-oftalmologia</p>
                     </div>
 
-                    <div class="font-1" id="info_cards">
-                        <img class="img_profile" src="assets/img/perfil_medico/img_perfil_med_mulher.png"
-                            alt="perfil medico">
-                            <div>
-                                <h1>Oftalmologia</h1>
-                                <p>CRM 152257</p>
-                                <p>RQE Nº 69358</p>
-                            </div>
-                            <div>
-                                <h1>Especialidades</h1>
-                                <p>Retina</p>
-                                <p>Neuro-oftalmologia</p>
-                            </div>
-                    </div>
+                    <a href="#"><button>Saiba mais</button></a>
 
-                    <div class="font-2" id="btn_saiba_mais">
-                        <a href="#">Saiba mais</a>
-                    </div>
-                </div>
-            </section>
+                </section>
+
+            </div>
 
         </section>
 
-        <section class="specialities_details"> <!--Saiba mais - section-->
+        <section class="specialties_details"> <!--Saiba mais - section-->
 
-            <!--Dra. Andreia-->
-
-            <!-- <div style='position: absolute; top:0px; right:0px;'>
+            <div>
                 <img src="assets/img/background/bg_esp_1.svg" alt="background">
-            </div> -->
-
-            <div>
-                <img src="assets/img/perfil_medico/img_perfil_med_mulher.png" alt="perfil medico">
             </div>
 
-            <div>
-                <h3>Dra. Andreia</h3>
-
-                <p><strong>Oftalmologia</strong> CRM 112022 RQE Nº 59782 </p>
-                <p><strong>Especialidades</strong> Oftalmo-Pediatra / Neuro Ocular </p>
-
-                <button class="doubts_btn"><a href="#">Dúvidas</a></button>
-            </div>
-
-            <div>
-                <h4>Tratamentos</h4>
-
-                <ul>
-                    <li>Desenvolvimento visual das crianças</li>
-                    <li>Tampão</li>
-                    <li>Diagnóstico de miopia</li>
-                    <li>Estrasbismo</li>
-                    <li>Astigmatismo </li>
-                    <li>Glaucoma</li>
-                </ul>
-
-                <h4>Especialidades</h4>
-
-                <p>Graduação em Medicina pela Faculdade de Medicina do ABC. Residência Médica em oftalmologia pelo
-                    Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo (HC FMUSP). </p>
-                <p>Título de Especialista pelo CBO. Especialização em Estrabismo pelo pelo Hospital das Clínicas da
-                    Faculdade de Medicina da Universidade de São Paulo. </p>
-
-            </div>
 
         </section>
 
-        <section class="specialities_details"> <!--Saiba mais - section-->
-
-            <!--Dr. Fabricio-->
-
-            <!-- <div style='position: absolute; top:0px; right:0px;'>
-                <img src="#" alt="background">
-            </div> -->
-
-            <div>
-                <img src="assets/img/perfil_medico/img_perfil_med_homem.png" alt="perfil medico">
-            </div>
-
-            <div>
-                <h3>Dr. Fabricio </h3>
-
-                <p><strong>Oftalmologia</strong> CRM 146288 RQE Nº 64825 </p>
-                <p><strong>Especialidades</strong> Cirurgia do Segmento Anterior </p>
-
-                <button class="doubts_btn"><a href="#">Dúvidas</a></button>
-            </div>
-
-            <div>
-                <h4>Tratamentos</h4>
-
-                <ul>
-                    <li>Desenvolvimento visual das crianças</li>
-                    <li>Tampão</li>
-                    <li>Diagnóstico de miopia</li>
-                    <li>Estrasbismo</li>
-                    <li>Astigmatismo </li>
-                    <li>Glaucoma</li>
-                </ul>
-
-                <h4>Especialidades</h4>
-
-                <p>Fellowship, Cleveland Clinic Foundation, 2006. </p>
-                <p>Universidade de São Paulo, 2000</p>
-                <p>Doutorado, Faculdade de Medicina da USP, 2011. </p>
-
-            </div>
-
-        </section>
-
-        <section class="specialities_details"> <!--Saiba mais - section-->
-
-            <!--Dra. Ana Cláudia-->
-
-            <!-- <div style='position: absolute; top:0px; right:0px;'>
-                <img src="#" alt="background">
-            </div>  -->
-
-            <div>
-                <img src="assets/img/perfil_medico/img_perfil_med_mulher.png" alt="perfil medico">
-            </div>
-
-            <div>
-                <h3>Dra. Ana Cláudia</h3>
-
-                <p><strong>Oftalmologia</strong> CRM 146288 RQE Nº 64825 </p>
-                <p><strong>Especialidades</strong> Cirurgia do Segmento Anterior </p>
-
-                <button class="doubts_btn"><a href="#">Dúvidas</a></button>
-            </div>
-
-            <div>
-                <h4>Tratamentos</h4>
-
-                <ul>
-                    <li>Oclusão da veia Retiniana</li>
-                    <li>Papiledema</li>
-                    <li>Descolamento de Retina</li>
-                    <li>Decolamento do Vitreo</li>
-                    <li>Neurite</li>
-                    <li>Miopia</li>
-                </ul>
-
-                <h4>Especialidades</h4>
-
-                <p>Graduação em Medicina - Universidade de São Paulo. Residência Médica em Oftalmologia - Universidade
-                    de São Paulo. </p>
-                <p>Título de especialista em Oftalmologia - Conselho Brasileiro de OftalmologiaEspecialização em Retina
-                    Cirúrgica e Neuroftalmologia, USPDoutora pela USP. </p>
-            </div>
-
-        </section>
 
     </main>
 
-    <footer>
-
-        <div class="time">
-            <img src="assets/img/logo/logo-vision-light.svg" alt="logotipo">
-
-            <p class="footer_text">
-                <strong>Horário de Atendimento</strong>
-                <br>
-                Seg a Sex das 8h às 18h
-                <br>
-                Sáb das 8h às 12h
-            </p>
-        </div>
-
-        <div class="contact">
-            <ul>
-                <li>
-                    <img src="assets/img/redes/telefone.png" alt="Ícone de telefone">
-                    <span>(11) 3276-3530</span>
-                </li>
-                <li>
-                    <img src="assets/img/redes/whatsapp.png" alt="Ícone do Whatsapp">
-                    <span>(11) 96731-8829</span>
-                </li>
-                <li>
-                    <a href="https://goo.gl/maps/iw4931p3dmeGrhv8A" target="_blank">
-                        <img src="assets/img/redes/localizacao.png" alt="Ícone de localização">
-                        <span>R. Padre Adelino, 333 - Belenzinho<br>São Paulo - SP, CEP: 03303-000</span>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="social_media">
-            <h1>Siga-nos!</h1>
-
-            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/redes/instagram.png"
-                    alt="Logo do Instagram"></a>
-            <a href="https://pt-br.facebook.com/" target="_blank"><img src="assets/img/redes/facebook.png"
-                    alt="Logo do Facebook"></a>
-
-        </div>
-
-        <div class="info_dev_team">
-            <h4>Desenvolvido por</h4>
-            <a href="#" target="_blank"><img src="#" alt="Logotipo - Time de desenvolvedores: DEV TEAM"></a>
-        </div>
-
-    </footer>
-
-    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/side_bar.js"></script>
 
 </body>
 

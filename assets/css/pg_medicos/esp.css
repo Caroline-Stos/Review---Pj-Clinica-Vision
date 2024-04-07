@@ -1,0 +1,157 @@
+/* background de cada bloco da pagina ----------------------------------------------------------------------------*/
+.esp_detalhada{
+    width: 100%;
+    height: 770px;
+    background-color: var(--azul-claro-light);
+    position: relative;
+    margin: 0px 0px 50px 0px;
+}
+
+/* comandos para aplicar os espaços em branco entre os blocos ----------------------------------------------------*/
+#espacamento_pagina{
+    display: flex;
+    flex-direction: column;
+}
+
+/* tamanho das listras azuis do background - svg ---------------------------------------------------------------*/
+.bg_listras_azuis{
+    display: flex;
+    width: 100%;
+    height: 770px;
+}
+
+/* foto + nome + CRM + especialidade ---------------------------------------------------------------------------- */
+
+.alinhamento_crm{
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+}
+.box_crm{
+    display:flexbox;
+    justify-items:left;
+    text-align:justify;
+    padding: 45px;
+    padding-top: 80px;
+    position: relative;
+    top: -45px;
+}
+.box_crm>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.box_crm>p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+scan{
+    font-weight: bold;
+}
+.btn_duvidas{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: var(--branco);
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+    border:none;
+    font-weight: 700;
+    background-color: var(--verde);
+    position: relative;
+    top: 26px;
+}
+/* retirando sublinhado do link do botão */
+#entre_em_contato{
+    text-decoration: none;
+    color: var(--branco);
+}
+/* Tratamentos e especialidades ----------------------------------------------------------------------------*/
+.box_tratamento_especialidades{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 450px;
+    position: relative;
+    top: -130px;
+    text-align: justify;
+}
+.box_tratamento_especialidades>h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.box_tratamento_especialidades>ul{
+    padding-bottom: 20px;
+}
+.box_tratamento_especialidades>p{
+    padding-bottom: 10px;
+}
+
+/* alinhamento de elementos a direita - dr fabricio -------------------------------------------------*/
+
+/* foto + nome + CRM + especialidade */
+.alinhamento_crm_fabricio{
+    display: flex;
+    flex-direction:row-reverse;
+    padding: 80px;
+}
+.box_crm_fabricio{
+    display:flexbox;
+    text-align: right;
+    justify-items: right;
+    padding: 45px;
+    padding-top: 80px; 
+    position: relative;
+    top:-45px;
+}
+.box_crm_fabricio>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.box_crm_fabricio>p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.btn_duvidas_fabricio{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: var(--branco);
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+    border:none;
+    font-weight: 700;
+    background-color: var(--verde);
+    position: relative;
+    top: 26px;
+}
+
+/* Tratamentos e especialidades ---------------------------------------------------------------------------- */
+.box_tratamento_especialidades_fabricio{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-left: 450px;
+    text-align: right;
+    position: relative;
+    top: -130px;
+}
+.box_tratamento_especialidades_fabricio>h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.box_tratamento_especialidades_fabricio>ul{
+    padding-bottom: 20px;
+}
+.box_tratamento_especialidades_fabricio>p{
+    padding-bottom: 10px;
+}
