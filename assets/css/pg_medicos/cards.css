@@ -1,21 +1,21 @@
 /* background dos cards - resumo dos 3 perfis */
 .cards_section{
     max-width: 100%;
-    height:850px;
-    padding: 80px;
+    height:800px;
+    padding: 60px;
     margin-bottom: 50px;
     background-color: var(--azul-claro-light);
     position: relative;
 }
 /* container que possui o banner de bg, está sendo utilizado para alinhar o elemento titulo que esta dentro dele */
-.first_section> div{
+.cards_section> div{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 /* faixa azul atras do titulo */
-.first_section> div> div{
+.cards_section> div> div{
     background-color: var(--azul-medio);
     border-radius: 30px;
     width: 430px;
@@ -40,9 +40,9 @@
     border-radius: 35px;
     padding: none;
 }
-.hover_cards>:not(:hover){
+.hover_cards>:hover{
     transform: scale(1.1);
-    transition: 1s;
+    transition: 0.5s;
 }
 /* cards */
 .card_medico{
@@ -72,7 +72,7 @@
     justify-items: center;
     padding: 10px 0px 10px 0px;
     font-family: var(--texto);
-    font-size: 15px;
+    font-size: 16px;
 }
 /* aplicando negrito nos subtitulos */
 strong{
