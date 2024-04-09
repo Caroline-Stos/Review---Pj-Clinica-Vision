@@ -1,14 +1,15 @@
 header>div:first-child {
     /* faixa azul acima do cabeçalho com telefone e link(botão) "Agende sua consulta" */
-    align-items: center;
     background-color: var(--azul-escuro);
-    display: flex;
+    width: 100%;
     font-family: var(--texto);
     font-weight: 600;
     font-size: 20px;
     height: 50px;
+
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
-    width: 100%;
 }
 /* telefone */
 header>div:first-child>span {
@@ -16,77 +17,83 @@ header>div:first-child>span {
 }
 /* (botão) "Agende sua consulta" */
 header>div:first-child>a {
-    align-items: center;
     background-color: var(--branco);
-    border-radius: 5px;
-    color: var(--azul-roxo);
-    display: flex;
     font-size: 16px;
     height: 30px;
-    justify-content: center;
+    border-radius: 5px;
+    color: var(--azul-roxo);
     margin: 0 5.5%;
     min-width: 185px;
     max-width: 208px;
     text-decoration: none;
     text-align: center;
-}
-/* faixa branca - navegador */
-header>div:nth-child(2) {
-    align-items: center;
-    background-color: var(--branco);
-    color: var(--azul-roxo);
-    display: flex;
-    font-weight: 700;
-    font-size: 16px;
-    font-family: var(--titulo);
-    height: 100px;
-    justify-content: space-around;
-    text-transform: uppercase;
-    width: 100%;
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* img logo */
 .header_logo {
     height: 85px;
     margin: 0 3%;
     max-width: 235px;
     min-width: 150px;
 }
+/* nav bar */
+header>div:nth-child(2) {
+    background-color: var(--branco);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: var(--titulo);
+    height: 100px;
+    color: var(--azul-roxo);
+    text-transform: uppercase;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 #show_menu ul {
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
     width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #show_menu ul li {
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
     padding: 10px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     white-space: nowrap;
 }
 
 #show_menu ul a {
-    align-items: center;
-    display: flex;
     color: var(--azul-roxo);
     text-decoration: none;
-}
-
-header>div:nth-child(2)>a {
+    
+    display: flex;
     align-items: center;
+}
+/* header links */
+header>div:nth-child(2)>a {
     background: var(--azul-roxo);
     border-radius: 10px;
     color: var(--branco);
-    display: flex;
     height: 40px;
-    justify-content: center;
     margin: 0 3% 0 0;
     text-decoration: none;
     width: 100px;
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* responsive nav */
 .mobile-menu-hamburguer {
     display: none;
     margin-right: 1em;
