@@ -61,7 +61,7 @@
 /* retangulos interno dos 3 cards centralizados */
 .card_medico div{
     width: 357px;
-    height: 98%;
+    height: 430px;
     background-color: var(--azul-claro);
 
     display: grid;
