@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--folhas de estilo-->
+    <link rel="stylesheet" href="css/css-especialidades/header.css">
+    <link rel="stylesheet" href="css/css-especialidades/base.css">
+    <link rel="stylesheet" href="css/css-especialidades/reset.css">
+    <link rel="stylesheet" href="js/sidebar.js">
+    <link rel="stylesheet" href="css/css-usuarios/painel.css">
+
+    <title>Nome-do-usuário/Clinica Vision</title>
+</head>
+
+<header>
+
+    <div class="faixa"> <!--Esta faixa fica em cima do menu na parte superior-->
+        <p id="faixa_adm">(11) 3275-3530</p>
+        <!--  <a href="#" target="_blank">Agende sua consulta </a> Este link está em formato de botão -->
+    </div>
+
+    <div class="cabecalho__container"> <!-- Este cabeçalho é aquela parte com bg branco e o menu com os links -->
+        <img class="logo__cabecalho" src="img/img-especialidades/logo-escuro.svg" alt="Logotipo da Clínica Vision.">
+
+        <a href="#" id="menu__link__usuario">Olá! "Nome-do-usuário"</a>
+
+        <nav id="mostrarMenu" class="cabecalho__menu">
+            <ul class="cabecalho__menu__lista">
+                <li><a id="cabecalho_link_adm" href="#">VOLTAR</a></li>
+                <li><a id="cabecalho_link_adm" href="login.html">LOGOUT</a></li>
+            </ul>
+        </nav>
+
+        <div onclick="mostrarMenu()" class="mobile-menu-amburguer">
+            <!-- Este menu amburguer só aparece no responsivo. A função está no path:assets/js/sideBar.js -->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+
+    <!--faixa ilustrada abaixo do cabecalho-->
+    <img class="faixa_listrada" src="img/img-painel_adm/faixa_listrada.svg" alt="faixa-listrada">
+
+    <main>
+
+        <section class="container_grid_adm"> <!--container resp. layout da pagina-->
+
+            <div class="janela_azul"><!--janela azul-->
+
+                <div class="janela_elementos"><!--alinhando elementos abaixo dentro da janela-->
+
+                    <img class="icone_usuario" src="img/img-painel_adm/icone_adm.png" alt="icone-administrador">
+
+                    <h1>Administrador(a)</h1>
+
+                    <div class="btn_novo_usuario"> <!--container menu novo usuario-->
+                        <label>+ Criar novo usuário</label>
+                        <select name="categoria" id="categoria">
+                            <option value="Paciente">Paciente</option>
+                            <option value="Funcionário">Funcionário</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="subtitulo">
+                <p>O QUE VOCÊ DESEJA ACESSAR?</p>
+            </div>
+
+            <div class="btn_quadrado"> <!--botoes-->
+                <a href="#">
+                    <img src="img/img-painel_adm/icone_clinica.png" alt="icone clinica">
+                    <h1>DADOS DA<br>CLÍNICA</h1>
+                </a>
+            </div>
+
+            <div class="btn_quadrado"> <!--botoes-->
+                <a href="#">
+                    <img id="centralize" src="img/img-painel_adm/icone_agendamento.png" alt="icone agendamento">
+                    <h1>CONSULTAR<br>AGENDAMENTOS</h1>
+                </a>
+            </div>
+
+            <div class="btn_quadrado"> <!--botoes-->
+                <a href="#">
+                    <img src="img/img-painel_adm/icone_paciente.png" alt="icone paciente">
+                    <h1>PACIENTES</h1>
+                </a>
+            </div>
+
+            <div class="btn_quadrado"> <!--botoes-->
+                <a href="#">
+                    <img src="img/img-painel_adm/icone_funcionario.png" alt="icone funcionario">
+                    <h1>FUNCIONÁRIOS</h1>
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/sidebar.js"></script>
+
+</body>
+
+</html>

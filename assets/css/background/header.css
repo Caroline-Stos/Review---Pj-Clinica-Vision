@@ -30,7 +30,7 @@ header>div:first-child>a {
     text-decoration: none;
     text-align: center;
 }
-
+/* faixa branca - navegador */
 header>div:nth-child(2) {
     align-items: center;
     background-color: var(--branco);
@@ -147,20 +147,10 @@ header>div:nth-child(2)>a {
     }
 }
 
-/* pagina ADM - painel de controle */
-
-#menu__link__usuario {
-    padding-right: 40px;
-}
-
-#menu__link__clinica {
-    padding-right: 40px;
-}
-
 /* --------------------------------- header do painel adm ---------------------------------------- */
 
 /* estilo dos botoes "voltar" e "logout" - mesmas propriedades do cabecalho__link__login */
-#cabecalho_link_adm {
+.btn_adm {
     align-items: center;
     background: var(--azul-roxo);
     border-radius: 10px;
@@ -174,10 +164,12 @@ header>div:nth-child(2)>a {
 }
 
 /* espaçamento do telefone na faixa azul, seguindo o espaçamento da pagina principal de 5.5% */
-#faixa_adm {
+.header_adm> div:first-child> span {
     margin: 0 5.5%;
 }
 /* cor do texto "Ola!"Nome do usuário"" */
-#menu__link__usuario {
+.header_adm> div:nth-child(2)> p {
     color: var(--azul-roxo);
+    padding-right: 40px;
 }
+
