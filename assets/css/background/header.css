@@ -157,19 +157,32 @@ header>div:nth-child(2)>a {
 /* --------------------------------- header do painel adm ---------------------------------------- */
 
 /* estilo dos botoes "voltar" e "logout" - mesmas propriedades do cabecalho__link__login */
-.btn_adm {
-    align-items: center;
+#btn_header_adm nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#btn_header_adm nav ul li {
+    margin-right: 30px; /* Espaçamento entre os botões */
+}
+
+#btn_header_adm nav ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último botão */
+}
+#btn_header_adm a {
+    width: 100px;
+    height: 40px;
     background: var(--azul-roxo);
     border-radius: 10px;
     color: var(--branco);
-    display: flex;
-    height: 40px;
-    justify-content: center;
     margin: 0 3% 0 0;
     text-decoration: none;
-    width: 100px;
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* espaçamento do telefone na faixa azul, seguindo o espaçamento da pagina principal de 5.5% */
 .header_adm> div:first-child> span {
     margin: 0 5.5%;
