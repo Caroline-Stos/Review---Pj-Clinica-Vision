@@ -126,6 +126,12 @@ section {
     border-color: var(--preto);
     box-shadow: 0 4px 4px #666;
 }
+.btn_main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .btn_main:hover{
     transform: scale(1.05);
     transition: 0.5s;
