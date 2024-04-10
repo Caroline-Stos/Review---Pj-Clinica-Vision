@@ -88,15 +88,25 @@ section {
     font-weight: bold;
     box-sizing: border-box;
 }
+/* alterando cor e tamanho do menu suspenso */
+.left_menu select {
+    width: 200px;
+    background-color: var(--branco);
+}
 /* subtitulo "oq voce deseja acessar? */
 .subtitle {
+    font-family: var(--titulo);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     grid-area: subtitle;
     grid-column: subtitle;
-    text-decoration: none;
-    padding-top: 20px;
 }
 /* tamanho dos quadrados dos botoes */
 .btn_main {
@@ -116,3 +126,31 @@ section {
     border-color: var(--preto);
     box-shadow: 0 4px 4px #666;
 }
+.btn_main:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+/* tamanho dos icones dos botoes */
+.btn_main img {
+    width: 120px;
+    height: 120px;
+}
+/* usado para centralizar o icone de agendamento que estava disproporcional */
+#centralize {
+    margin-left: 10px;
+}
+
+/* estilo do texto dentro dos botoes */
+h1{
+    font-family: var(--titulo);
+    color: var(--preto);
+    font-weight:600;
+    padding-top: 20px;
+    text-align: center;
+}
+/* retirando sublinhado do link */
+a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
